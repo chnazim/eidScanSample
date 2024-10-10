@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical"
+    tools:context="com.example.justocr.MainActivity$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/img_sample"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+       	android:scaleType="fitXY"
+        />
+
+    <ProgressBar
+        android:id="@+id/prg_status_ocr"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+       
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txt_ocr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/whiteTextTheme" />
+        
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cat_mycam"
+            android:layout_width="0dp"
+           android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="2dp"
+            
+            android:drawableTop="@drawable/capture_photo"
+            android:onClick="captureFromMyCam"
+            android:text="Capture Image to Read OCR"
+             android:background="@drawable/new_button_back"
+            android:textColor="@android:color/white" />
+
+        
+    </LinearLayout>
+
+</LinearLayout>

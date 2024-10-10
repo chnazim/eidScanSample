@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+	<!-- GENERAL SETTINGS -->
+	<PreferenceCategory android:title="General settings" >
+
+		<ListPreference android:title="Recognize"
+			android:key="sourceLanguageCodeOcrPref"
+			android:entries="@array/languagenames"
+			android:entryValues="@array/iso6393" />
+			
+	</PreferenceCategory>
+
+	
+
+	<!-- ADVANCED SETTINGS -->
+	<PreferenceCategory android:title="Advanced settings">
+
+	    <ListPreference android:key="preference_ocr_engine_mode"
+	        android:title="OCR engine"
+	        android:entries="@array/ocrenginemodes"
+	        android:entryValues="@array/ocrenginemodes"/>
+	    
+	    
+	 
+	    	    
+        
+
+<!-- 
+		<CheckBoxPreference
+		    android:key="preference_toggle_light"
+		    android:title="Light"/>
+-->
+
+	    <ListPreference android:key="preference_page_segmentation_mode"
+			android:title="Page segmentation"
+			android:entries="@array/pagesegmentationmodes"
+			android:entryValues="@array/pagesegmentationmodes" />
+
+	    
+	</PreferenceCategory>
+	
+</PreferenceScreen>
