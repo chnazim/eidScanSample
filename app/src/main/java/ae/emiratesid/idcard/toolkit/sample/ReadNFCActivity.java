@@ -9,6 +9,7 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.NfcF;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
@@ -55,9 +56,10 @@ public class ReadNFCActivity extends AppCompatActivity {
 
     @Override
     protected void onNewIntent(Intent intent) {
-        Logger.d("REadNFCActivityInvoking on New Intent");
+        Log.d("onNewIntent", "onNewIntent: ");
         super.onNewIntent(intent);
         Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+        Log.d("onNewIntent",tag.toString());
         showProgressDialog("Connecting.");
         CardReaderConnectionTask cardReaderConnectionTask = new CardReaderConnectionTask(connectToolkitListener,
                 true, tag);

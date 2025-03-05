@@ -3,11 +3,11 @@ package ae.emiratesid.idcard.toolkit.sample.toolkit_face;
 import android.content.Context;
 import android.content.Intent;
 
+import ae.emiratesid.idcard.toolkit.BuildConfig;
 import ae.emiratesid.idcard.toolkit.Toolkit;
 import ae.emiratesid.idcard.toolkit.ToolkitException;
 import ae.emiratesid.idcard.toolkit.datamodel.CardPublicData;
 import ae.emiratesid.idcard.toolkit.datamodel.FaceSDKData;
-import ae.emiratesid.idcard.toolkit.sample.BuildConfig;
 import ae.emiratesid.idcard.toolkit.sample.ConnectionController;
 import ae.emiratesid.idcard.toolkit.sample.Constants;
 import ae.emiratesid.idcard.toolkit.sample.logger.Logger;

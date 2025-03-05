@@ -15,7 +15,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.justocr.MrzOcrActivity;
 
 import ae.emiratesid.idcard.toolkit.Toolkit;
 import ae.emiratesid.idcard.toolkit.ToolkitException;
@@ -112,8 +111,8 @@ public class AuthenticateFaceIdnFragment extends AuthenticateFaceFragment implem
                 edtIdn.setError("required");
             }
         } else if (view == btnReadMrz) {
-            Intent intent = new Intent(getActivity(), MrzOcrActivity.class);
-            startActivityForResult(intent, MRZ_REQUEST);
+//            Intent intent = new Intent(getActivity(), MrzOcrActivity.class);
+//            startActivityForResult(intent, MRZ_REQUEST);
         } else if (view == btnOptions) {
             showFaceSDKOptions(view);
         }

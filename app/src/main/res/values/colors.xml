@@ -37,4 +37,6 @@
     <color name="black">#000000</color>
     <color name="colorFaceAuthenticationAccent">#2C1689</color>
     <color name="ic_launcher_background">#ECF2FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="base_color_white_half">#E5CDCC</color>
 </resources>

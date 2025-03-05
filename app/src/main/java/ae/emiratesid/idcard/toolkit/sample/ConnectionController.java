@@ -3,6 +3,7 @@ package ae.emiratesid.idcard.toolkit.sample;
 import android.content.Context;
 import android.nfc.Tag;
 import android.text.TextUtils;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -169,7 +170,6 @@ public class ConnectionController {
             //Get the first reader.
 
             Logger.d("list reader successful" + cardReader.getName());
-
 
             cardReader.connect();
             Logger.d("Connection Success full  " + cardReader.isConnected());
